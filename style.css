@@ -1,7 +1,6 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 @font-face {
     font-family: cabinet-black;
@@ -35,70 +34,130 @@
     font-family: cabinter-thin;
     src: url('./fonts/CabinetGrotesk-Thin.otf');
 }
-#hero .button{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 50px;
+body {
+    overflow-y: scroll;
+    overflow-x: hidden; /* Enables vertical scrolling */
 }
-button{
-    width: 200px;
-    height: 200px;  
-    font-family: cabinet-extrabold;
-    font-size: 20px;
-    border-radius: 50%;
-    color:#000;
-    background-color: white;
-    cursor: pointer;
-    align-items: center;
-}
-#hero{
-    background: #000;
-    height:100vh;
+
+/* Fixed Background Section */
+.fixed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    position: absolute;
-    z-index: -2;
+    height: 100vh;
+    background-color: #697565;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    z-index: -1;
 }
-#header{
+
+.fixed-background h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: cabinet-bold;
+}
+
+.fixed-background .background-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fixed-background p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+/* The content that scrolls over the fixed background */
+#hero {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    padding-bottom: 240px;
+    background-color: #1A1A19; /* Allows the fixed background to show through */
+}
+.transparent {
+    background: transparent;
+    height: 100vh;
+}
+#header {
     display: flex;
     justify-content: space-between;
 }
-#header .left{
+
+#header .left {
     display: flex;
 }
-#header .left .logo{
+
+#header .left .logo {
     width: 250px;
     padding: 20px;
 }
+
 #header .left .heading{
     color: #fff;
     font-size: 40px;
     padding-top: 60px;
     font-family: cabinet-black;
 }
-#header .right .heading{
+#header .right .heading {
     color: #fff;
     font-size: 40px;
-    padding-top: 75px;
+    padding-top: 80px;
     font-family: cabinet-black;
 }
-#header .right{
-    padding-right: 30px;
+#header .right {
+    padding-right: 150px;
 }
-#hero .rectangle1{
+
+#hero div.button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+button.button {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.1s ease-in-out;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+}
+button.button a{
+    font-family: cabinet-extrabold;
+    font-size: 20px; 
+    color: #fff;   
+}
+button.clicked {
+    background-color: green;
+}
+
+#hero .rectangle1, #hero .rectangle2 {
     width: 102%;
     position: absolute;
-    background-image: linear-gradient(#7367F0,#A582F7,#CE9FFC);
+    background-image: linear-gradient(#7367F0, #A582F7, #CE9FFC);
     height: 100px;
+    z-index: -1;
+    margin-top: 40px;
+}
+
+#hero .rectangle1 {
     transform: rotate(-177.82deg);
-    z-index: -1;
-    margin-top: 40px;
 }
-#hero .rectangle2{
-    width: 102%;
-    position: absolute;
-    background-image: linear-gradient(#7367F0,#A582F7,#CE9FFC);
-    height: 100px;
+
+#hero .rectangle2 {
     transform: rotate(177.82deg);
-    z-index: -1;
-    margin-top: 40px;
+}
+
+#hero .idk {
+    margin-top: 100px;
 }
