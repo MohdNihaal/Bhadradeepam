@@ -58,9 +58,10 @@ body {
 }
 
 .fixed-background h1 {
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 20px;
     font-family: cabinet-bold;
+    color: #1A1A19;
 }
 
 .fixed-background .background-image {
@@ -118,24 +119,12 @@ body {
 }
 
 #hero div.button {
+    padding: 40px 50px;
+}
+#hero div.button div{
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
-}
-button.button {
-    width: 200px;
-    height: 200px;
-    align-items: center;
-    border-radius: 50%;
-    transition: background-color 0.1s ease-in-out;
-    background-color: red;
-    cursor: pointer;
-    border: none;
-}
-button.button a{
-    font-family: cabinet-extrabold;
-    font-size: 20px; 
-    color: #fff;   
+    margin-bottom: 20px;
 }
 button.clicked {
     background-color: green;
@@ -145,19 +134,63 @@ button.clicked {
     width: 102%;
     position: absolute;
     background-image: linear-gradient(#7367F0, #A582F7, #CE9FFC);
-    height: 100px;
+    height: 130px;
     z-index: -1;
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 #hero .rectangle1 {
-    transform: rotate(-177.82deg);
+    transform: rotate(-180.82deg);
 }
 
 #hero .rectangle2 {
-    transform: rotate(177.82deg);
+    transform: rotate(181.82deg);
+    margin-top: 85px;
 }
 
 #hero .idk {
     margin-top: 100px;
 }
+.btn {
+    border: none;
+    width: 15em;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+    margin-right: 10px;
+  }
+  
+  .sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+  }
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  } 
