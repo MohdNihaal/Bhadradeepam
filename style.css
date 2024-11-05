@@ -1,32 +1,40 @@
 @font-face {
-    font-family: 'Black';
-    src: url('CabinetGrotesk-Black') format('otf');
+    font-family: cabinet-black;
+    src: url('./fonts/CabinetGrotesk-Black.otf');
 }
 @font-face {
-    font-family: 'Bold';
-    src: url('CabinetGrotesk-Bold') format('otf');
+    font-family: cabinet-bold;
+    src: url('./fonts/CabinetGrotesk-Bold.otf');
 }
 @font-face {
-    font-family: 'ExtraBold';
-    src: url('CabinetGrotesk-ExtraBold') format('otf');
+    font-family: cabinet-extrabold;
+    src: url('./fonts/CabinetGrotesk-ExtraBold.otf');
 }
 @font-face {
-    font-family: 'ExtraLight';
-    src: url('CabinetGrotesk-ExtraLight') format('otf');
+    font-family: cabinet-extralight;
+    src: url('./fonts/CabinetGrotesk-ExtraLight.otf');
 }
 @font-face {
-    font-family: 'Light';
-    src: url('CabinetGrotesk-Light') format('otf');
+    font-family: cabinet-light;
+    src: url('./fonts/CabinetGrotesk-Light.otf');
 }
 @font-face {
-    font-family: 'Medium';
-    src: url('CabinetGrotesk-Medium') format('otf');
+    font-family: cabinter-medium;
+    src: url('./fonts/CabinetGrotesk-Medium.otf');
 }
 @font-face {
-    font-family: 'Regular';
-    src: url('CabinetGrotesk-Regular') format('otf');
+    font-family: cabinet-regular;
+    src: url('./fonts/CabinetGrotesk-Regular.otf');
 }
 @font-face {
-    font-family: 'Thin';
-    src: url('CabinetGrotesk-Thin') format('otf');
+    font-family: cabinter-thin;
+    src: url('./fonts/CabinetGrotesk-Thin.otf');
+}
+button{
+    width: 300px;
+    height: 300px;
+    padding-right: 20px;    
+    font-family: cabinet-extrabold;
+    font-size: 30px;
+    border-radius: 50%;
 }
