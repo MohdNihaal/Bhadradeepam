@@ -6,7 +6,7 @@ const authToken = "bq2sxTjyUyzIO7YWDmpxQm1T0DW3X87u";
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       const virtualPin = button.dataset.pin;
-      const url = `${baseUrl}${authToken}&${virtualPin}=0`;
+      const url = `${baseUrl}${authToken}&${virtualPin}=1`;
 
       fetch(url)
         .then(response => {
