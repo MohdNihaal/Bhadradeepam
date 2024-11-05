@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Black';
+    src: url('CabinetGrotesk-Black') format('otf');
+}
+@font-face {
+    font-family: 'Bold';
+    src: url('CabinetGrotesk-Bold') format('otf');
+}
+@font-face {
+    font-family: 'ExtraBold';
+    src: url('CabinetGrotesk-ExtraBold') format('otf');
+}
+@font-face {
+    font-family: 'ExtraLight';
+    src: url('CabinetGrotesk-ExtraLight') format('otf');
+}
+@font-face {
+    font-family: 'Light';
+    src: url('CabinetGrotesk-Light') format('otf');
+}
+@font-face {
+    font-family: 'Medium';
+    src: url('CabinetGrotesk-Medium') format('otf');
+}
+@font-face {
+    font-family: 'Regular';
+    src: url('CabinetGrotesk-Regular') format('otf');
+}
+@font-face {
+    font-family: 'Thin';
+    src: url('CabinetGrotesk-Thin') format('otf');
+}
