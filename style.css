@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
 @font-face {
     font-family: cabinet-black;
     src: url('./fonts/CabinetGrotesk-Black.otf');
@@ -30,11 +35,70 @@
     font-family: cabinter-thin;
     src: url('./fonts/CabinetGrotesk-Thin.otf');
 }
+#hero .button{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
 button{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     padding-right: 20px;    
     font-family: cabinet-extrabold;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 50%;
+    color:#000;
+    background-color: white;
+    cursor: pointer;
+}
+#hero{
+    background: #000;
+    height:100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+#header .left{
+    display: flex;
+}
+#header .left .logo{
+    width: 250px;
+    padding: 20px;
+}
+#header .left .heading{
+    color: #fff;
+    font-size: 40px;
+    padding-top: 60px;
+    font-family: cabinet-black;
+}
+#header .right .heading{
+    color: #fff;
+    font-size: 40px;
+    padding-top: 75px;
+    font-family: cabinet-black;
+}
+#header .right{
+    padding-right: 30px;
+}
+#hero .rectangle1{
+    width: 102%;
+    position: absolute;
+    background-image: linear-gradient(#7367F0,#A582F7,#CE9FFC);
+    height: 100px;
+    transform: rotate(-177.82deg);
+    z-index: -1;
+    margin-top: 40px;
+}
+#hero .rectangle2{
+    width: 102%;
+    position: absolute;
+    background-image: linear-gradient(#7367F0,#A582F7,#CE9FFC);
+    height: 100px;
+    transform: rotate(177.82deg);
+    z-index: -1;
+    margin-top: 40px;
 }
