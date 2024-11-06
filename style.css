@@ -121,7 +121,7 @@ body {
 #hero div.button {
     display: flex;
     justify-content: space-between;
-    padding: 50px 50px;
+    padding:62px 50px;
 }
 button.clicked {
     background-color: #f17922;
@@ -174,3 +174,8 @@ button:hover {
 button:active {
   transform: translateY(-1px);
 }
+
+
+@media (max-width: 800px){
+    
+} 
