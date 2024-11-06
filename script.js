@@ -28,3 +28,34 @@ buttons.forEach(button => {
       });
   });
 });
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered:', registration);
+      })
+      .catch(error => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+
+  window.addEventListener('beforeinstallprompt', (event) => {
+    console.log('beforeinstallprompt event fired');
+    window.deferredPrompt = event;
+  });
+
+  document.getElementById('install-button').addEventListener('click', () => {
+    if (window.deferredPrompt) {
+      console.log('User clicked the install button');
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt = null;
+      });
+    }
+  });
+}
