@@ -81,7 +81,7 @@ body {
     position: relative;
     z-index: 1;
     background: transparent;
-    padding-bottom: 240px;
+    padding-bottom: 140px;
     background-color: #1A1A19; /* Allows the fixed background to show through */
 }
 .transparent {
