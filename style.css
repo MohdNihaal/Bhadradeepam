@@ -129,7 +129,7 @@ button.clicked {
 }
 
 #hero .rectangle1, #hero .rectangle2 {
-    width: 102%;
+    width: 100%;
     position: absolute;
     background-image: linear-gradient(#7367F0, #A582F7, #CE9FFC);
     height: 100px;
@@ -139,10 +139,12 @@ button.clicked {
 
 #hero .rectangle1 {
     transform: rotate(-177.82deg);
+    width: 1338px;
 }
 
 #hero .rectangle2 {
     transform: rotate(177.82deg);
+    width: 1338px;
 }
 
 #hero .idk {
@@ -176,6 +178,6 @@ button:active {
 }
 
 
-@media (max-width: 800px){
-    
+@media (max-width: 13400px){
+
 } 
