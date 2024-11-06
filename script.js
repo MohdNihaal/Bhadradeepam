@@ -9,7 +9,7 @@ buttons.forEach(button => {
  // Toggle the 'clicked' class
 
     const virtualPin = button.dataset.pin;
-    const url = `${baseUrl}${authToken}&${virtualPin}=0`;
+    const url = `${baseUrl}${authToken}&${virtualPin}=1`;
 
     fetch(url)
       .then(response => {
