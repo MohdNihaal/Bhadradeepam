@@ -5,6 +5,7 @@ const buttons = document.querySelectorAll('button');
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
+    button.disabled = true;
     button.classList.toggle('clicked');   
  // Toggle the 'clicked' class
 
