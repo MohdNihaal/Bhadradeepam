@@ -5,9 +5,9 @@ const buttons = document.querySelectorAll('button');
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
+    if (button.disabled) return; // Prevent re-clicking if already clicked
     button.disabled = true;
-    button.classList.toggle('clicked');   
- // Toggle the 'clicked' class
+    button.classList.add('clicked'); // Add a 'clicked' class for styling if needed
 
     const virtualPin = button.dataset.pin;
     const url = `${baseUrl}${authToken}&${virtualPin}=1`;
@@ -20,15 +20,14 @@ buttons.forEach(button => {
         return response.text();
       })
       .then(data => {
-        console.log('Success:',   
- data);
+        console.log('Success:', data);
       })
       .catch(error => {
-        console.error('Error:', error);   
-
+        console.error('Error:', error);
       });
   });
 });
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/service-worker.js')
@@ -45,7 +44,7 @@ if ('serviceWorker' in navigator) {
     window.deferredPrompt = event;
   });
 
-  document.getElementById('install-button').addEventListener('click', () => {
+  document.getElementById('install-button')?.addEventListener('click', () => {
     if (window.deferredPrompt) {
       console.log('User clicked the install button');
       deferredPrompt.prompt();
