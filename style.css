@@ -77,8 +77,9 @@ body {
     position: relative;
     z-index: 1;
     background: transparent;
-    padding-bottom: 265px;
-    background-color: #0C0C0C;/* Allows the fixed background to show through */
+    padding-bottom: 105px;
+    background-color: #0C0C0C;
+    opacity: 95%;
 }
 .transparent {
     background: transparent;
@@ -111,7 +112,7 @@ body {
     font-family: cabinet-black;
 }
 #header .right {
-    padding-right: 150px;
+    padding-right: 40px;
 }
 
 #hero div.button {
@@ -120,11 +121,11 @@ body {
 #hero div.button div{
     display: flex;
     justify-content: space-between;
-    padding:92px 200px;
+    padding:40px 100px;
 }
 #hero div.button div.two{
-    padding-left:360px;
-    padding-right:360px;
+    padding-left:230px;
+    padding-right:200px;
 }
 
 button.clicked {
@@ -167,18 +168,19 @@ box-shadow: 0 0 25px rgb(0,140,255);
     } 
 }
 .head{
-    font-size: 170px;
+    font-size: 100px;
     font-family: cabinet-black;
     position: absolute;
     margin-top: 100px;
-    left: 70px;
+    left: 150px;
     z-index: 1;
 }
 .logo1{
-    width: 300px;
+    width: 200px;
 }
 .random .kids{
     width: 700px;
     position: absolute;
-    left:300px; 
+    left:150px; 
+    opacity: 70%;
 }
